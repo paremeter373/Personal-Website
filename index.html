@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!-- Add this before your custom CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.css">
+
+<!-- Add this before your custom JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+<!-- Add this in the <head> section, after your other CSS links -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+      <div class="mac-buttons">
+        <div class="mac-btn close"></div>
+        <div class="mac-btn minimize"></div>
+        <div class="mac-btn maximize"></div>
+      </div>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Profile placeholder" width="80">
+          <!-- <img src="./assets/images/p.jpg" alt="Het Patel" width="80"> -->
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Het Patel">Het Patel</h1>
+
+          <p class="title">Software Developer @ TSI</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:hpate384@gmail.com" class="contact-link">hpate384@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+16472916312" class="contact-link">+1 647 291 6312</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">University</p>
+
+              <time datetime="2022-09-01">Western University</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>London, ON</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <i class="fab fa-researchgate"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+         
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+      <div class="os-toolbar">
+        <div class="toolbar-left">
+          <div class="toolbar-nav">
+            <button class="nav-btn">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+            <button class="nav-btn">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="file-path">
+            <span class="path-text">~/Portfolio/Home</span>
+          </div>
+        </div>
+        <div class="toolbar-right">
+          <div class="toolbar-search">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="text" placeholder="Search...">
+          </div>
+          <ion-icon name="grid-outline"></ion-icon>
+        </div>
+      </div>
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link active" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#resume" class="navbar-link" data-nav-link>Resume</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+
+      <article class="home" data-page="home" id="home">
+        <div class="hero">
+          <h1>Hey, My Name Is <span>Het Patel</span></h1>
+          <h2>I'm a <span class="typing"></span></h2>
+          <p>
+            Third-year student at Western University, pursuing an Honours Specialization 
+            in Computer Science with a Minor in Software Engineering. Passionate about 
+            building elegant solutions and exploring new technologies.
+          </p>
+          <div class="button-container">
+            <a href="#" class="os-button">
+              <ion-icon name="document-text-outline"></ion-icon>
+              <span>Download Resume</span>
+            </a>
+            <a href="#contact" class="os-button">
+              <ion-icon name="mail-outline"></ion-icon>
+              <span>Contact Me</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="stats-container">
+          <div class="stat-box">
+            <div class="stat-icon">
+              <ion-icon name="document-text"></ion-icon>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Publications</span>
+            </div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-icon">
+              <ion-icon name="layers"></ion-icon>
+            </div>
+            <div class="stat-info">
+              <span class="stat-label">Full Stack Developer</span>
+            </div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-icon">
+              <ion-icon name="trophy"></ion-icon>
+            </div>
+            <div class="stat-info">
+              <span class="stat-label">Duck Hacks Winner</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="about" data-page="about" id="about">
+  
+      
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume" id="resume">
+        <!-- Resume content goes here -->
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio" id="portfolio">
+        <!-- Portfolio content goes here -->
+      </article>
+
+      <!--
+        - #BLOG
+      -->
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact" id="contact">
+        <!-- Contact content goes here -->
+      </article>
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+
+  
+
+</html>
